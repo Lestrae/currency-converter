@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #414141;
+  background-image: linear-gradient(rgb(182, 182, 182), rgb(17, 17, 17)); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1d1d1d; 
+  background-image: linear-gradient(rgb(85, 85, 85), rgb(17, 17, 17));
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.currency-converter {
+  display: flex;
+  flex-direction: column;
+  background: rgba(145, 145, 145, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0);
+  min-width: 30rem;
+  max-width: 80rem;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+#amount {
+  display: flex;
+  width: 80%;
+  justify-self: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+}
+
+#from {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 1rem;
+}
+
+#to {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 1rem;
+}
+
+#flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 0,
+  'GRAD' 0,
+  'opsz' 0;
+  margin-top: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.material-symbols-outlined:hover {
+  background-color: rgba(0, 0, 0, 0);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 0;
+}
+
+.currency-error {
+  color: red;
+}
+
+#converted {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-self: center;
+  align-content: center;
+  align-items: baseline;
+  margin: 10px 5px 10px 5px;
+  width: 100%;
+}
+
+h2#converted{
+  display: flex;
+  padding: 0;
+  align-self: center;
+  align-content: center;
+  align-items: baseline;
+  margin: 10px 5px 10px 5px;
+  width: 100%;
+}
+
+#from1{
+  padding: 0;
+  align-content: center;
+  margin: 10px 10px 0 0;
+  width: 50%;
+  background-color: rgb(48, 47, 47);
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(196, 194, 194);
+  overflow-x: auto;
+}
+#to1 {
+  align-content: center;
+  margin: 10px 0 0 10px;
+  width: 50%;
+  background-color: rgb(48, 47, 47);
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(196, 194, 194);
+  overflow-x: auto;
+}
