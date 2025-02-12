@@ -136,3 +136,102 @@ h2#converted{
   border-color: rgb(196, 194, 194);
   overflow-x: auto;
 }
+
+select {
+  font-family: Arial, sans-serif; /* Change font */
+  font-size: 16px; /* Change font size */
+  color: #b48547; /* Change font color for the selected option */
+  background-color: #2c2c2c; /* Background color */
+  padding: 1px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the options */
+select option {
+  color: #b48547; /* Red font color for options */
+  background-color: #313131; /* Background color for options */
+  padding: 1px;
+}
+
+input {
+  color: #b48547; /* Red font color for options */
+  background-color: #313131; /* Background color for options */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .currency-converter {
+    display: flex;
+    flex-direction: column;
+    background: rgba(145, 145, 145, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0);
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    padding: 50px 75px 75px 75px;
+    margin: 0;
+  }
+  #flex-container {
+    display: inline-block;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  #converted {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #from1{
+    padding: 0;
+    align-content: center;
+    margin: 10px 10px 0 0;
+    width: 100%;
+    background-color: rgb(48, 47, 47);
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(196, 194, 194);
+    overflow-wrap: break-word;
+  }
+  #to1 {
+    align-content: center;
+    margin: 10px 0 0 10px;
+    width: 100%;
+    background-color: rgb(48, 47, 47);
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(196, 194, 194);
+    overflow-wrap: break-word;
+  }
+  #from {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 1rem;
+  }
+  
+  #to {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 1rem;
+  }
+}
